@@ -1,4 +1,6 @@
-FROM ubuntu:focalLABEL maintainer="Pascal Kraft" \
+FROM ubuntu:focal
+
+LABEL maintainer="Mustapha Aref" \
       description="Basic C++ stuff for CircleCi repo." \
       version="0.1.0"
 
@@ -17,10 +19,11 @@ RUN apt-get install -y --no-install-recommends\
                     clang-10 \
                     build-essential \
                     cmake \
+                    libgtest-dev \
                     unzip \
                     tar \
                     ca-certificates && \
-    apt-get autoclean && \
-    apt-get autoremove && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+                    apt-get autoclean && \
+                    apt-get autoremove && \
+                    apt-get clean && \
+                    rm -rf /var/lib/apt/lists/*
