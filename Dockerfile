@@ -20,6 +20,7 @@ RUN apt-get install -y --no-install-recommends\
                     build-essential \
                     cmake \
                     libgtest-dev \
+                    libsdl2-dev \
                     unzip \
                     tar \
                     vim \
