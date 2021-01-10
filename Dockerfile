@@ -22,6 +22,7 @@ RUN apt-get install -y --no-install-recommends\
                     libgtest-dev \
                     unzip \
                     tar \
+                    vim \
                     ca-certificates && \
                     apt-get autoclean && \
                     apt-get autoremove && \
